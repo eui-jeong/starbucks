@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,900;1,100;1,200;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../moon/css/base.css">
+		<link rel="stylesheet" type="text/css" href="one.css">
+	</head>
+	<body>
+		<section>
+			<div class="circle"></div>
+			<header>
+				<a href="#" class="logo"><img src="https://blog.kakaocdn.net/dn/0mUxo/btq7tFXsrun/w0zt5JhMC0ZofJfBLRPGPK/img.png"></a>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">What's New</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</header>
+			<div class="content">
+			<div class="textBox">
+				<h2>It's not just Coffee<br>It's <span>StarBucks</span></h2>
+				<p>Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+				<a href="#">Learn More</a>
+			</div>
+				
+			<div class="imgBox">
+				<img src="https://blog.kakaocdn.net/dn/cb7sp8/btq7ytgRiUm/ZaKgt1u05cbPaQQmHfaTok/img.png" class="starbucks">
+			</div>
+			</div>
+			<ul class="thumb">
+				<li><img src="https://blog.kakaocdn.net/dn/cb7sp8/btq7ytgRiUm/ZaKgt1u05cbPaQQmHfaTok/img.png" onclick="imgSlider('https://blog.kakaocdn.net/dn/cb7sp8/btq7ytgRiUm/ZaKgt1u05cbPaQQmHfaTok/img.png'); changeCircleColor('#f6c9c2')"></li>
+				<li><img src="https://blog.kakaocdn.net/dn/bOtbLl/btq7yXB1L17/E0bsUI0O0txqdzzcgspB1K/img.png" onclick="imgSlider('https://blog.kakaocdn.net/dn/bOtbLl/btq7yXB1L17/E0bsUI0O0txqdzzcgspB1K/img.png'); changeCircleColor('#f7bc37')"></li>
+				<li><img src="https://blog.kakaocdn.net/dn/mhUcF/btq7wywGpqd/pASjaLDN9MMtOqi4uTRgk1/img.png" onclick="imgSlider('https://blog.kakaocdn.net/dn/mhUcF/btq7wywGpqd/pASjaLDN9MMtOqi4uTRgk1/img.png'); changeCircleColor('#debb7d')"></li>
+			</ul>
+			<ul class="sci">
+				<li><a href="#"><i class="bi bi-twitter"></i></a></li>
+				<li><a href="#"><i class="bi bi-facebook"></i></a></li>
+				<li><a href="#"><i class="bi bi-instagram"></i></a></li>
+			</ul>
+		</section>
+		<script type="text/javascript">
+			function imgSlider(anything){
+				document.querySelector('.starbucks').src=anything;
+			}
+			function changeCircleColor(color){
+				const circle=document.querySelector('.circle');
+				circle.style.backgroundColor= color;
+			}
+		</script>
+	</body>
+</html>
