@@ -4,16 +4,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-section{
-height: 935px;
-position: relative;
-width: 100%;
-min-width: 100vh;
-padding: 100px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #fff;
+	section{
+	height: 935px;
+	position: relative;
+	width: 100%;
+	min-width: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
 }
 header{
 	position: absolute;
@@ -126,8 +126,8 @@ header ul li a{
 	line-height: 70px;
 }
 .sci li a{
-display: inline-block;
-margin: 5px 0;
+	display: inline-block;
+	margin: 5px 0;
 }
 .sci li a:link{
 	color: white;
