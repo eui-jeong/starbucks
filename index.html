@@ -54,28 +54,18 @@
 				const circle=document.querySelector('.circle');
 				circle.style.backgroundColor= color;
 			}
-			  "use strict" 
-			   var val1 = 25; 
-			   var val2 = 4; 
-			   var multiply = () => { 
-			       return val1 * val2; 
-			   } 
-			  if (true) { 
-			       var val1 = 2; 
-			      var val2 = 3; 
-			    var multiply = () => { 
-			        return val1 * val2 * 3; 
-			     } 
-			    console.log(multiply()); 
-			 } 
-			function getProduct() { 
-			    var val1 = 10; 
-			    var val2 = 4; 
-			     return multiply(); 
-			} 
-			
-			 console.log(getProduct()); 
-			 console.log(multiply());
+			 var value = 1; 
+var obj = { 
+    value: 100, 
+    foo: function() { 
+        console.log("foo's this.value: ",  this.value); 
+        function bar() { 
+            console.log("bar's this.value: ", this.value); 
+        } 
+        bar(); 
+    } 
+}; 
+obj.foo();
 			
 
 
