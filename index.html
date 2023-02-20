@@ -54,14 +54,13 @@
 				const circle=document.querySelector('.circle');
 				circle.style.backgroundColor= color;
 			}
-			
-			var container = Array(); 
-for (var i=0; i<5; i++){ 
-    container.push(function () { 
-        console.log(`나는 ${i}번 입니다.`); 
-    }); 
-} 
-console.log(container[3](); )
+			var i; 
+for (i = 0; i < 10; i++) {
+    setTimeout(function () {
+        console.log(i); 
+    }, 100); 
+}
+
 			
 
 
