@@ -54,21 +54,27 @@
 				const circle=document.querySelector('.circle');
 				circle.style.backgroundColor= color;
 			}
-			var value = 1;
+			var increase1 = (
+    function () {
+    var counter = 0; 
+    return function () { 
+        return ++counter; 
+    }; 
+}()); 
+increase1(); 
+increase1(); 
+increase1(); 
+console.log("increase1 : ", increase1()); 
 
-var obj = {
-        value: 100,
-    foo: function() {
-            console.log("method's this window: ",  this===window);
-            console.log("method's this.value: ",  this.value); // 100
-                setTimeout(function() {
-                        console.log("callback's this window: ",  this===window);
-                        console.log("callback's this.value: ",  this.value); // 1
-                }, 100);
-    }
-};
-var foo = obj.foo;
-foo();
+function increase2() { 
+    var counter = 0; 
+    return ++counter; 
+} 
+increase2(); 
+increase2(); 
+increase2(); 
+console.log("increase2 : ", increase2());
+
 
 			
 
