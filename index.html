@@ -54,18 +54,22 @@
 				const circle=document.querySelector('.circle');
 				circle.style.backgroundColor= color;
 			}
-			 var value = 1; 
-var obj = { 
-    value: 100, 
-    foo: function() { 
-        console.log("foo's this.value: ",  this.value); 
-        function bar() { 
-            console.log("bar's this.value: ", this.value); 
-        } 
-        bar(); 
-    } 
-}; 
-obj.foo();
+			var value = 1;
+
+var obj = {
+        value: 100,
+    foo: function() {
+            console.log("method's this window: ",  this===window);
+            console.log("method's this.value: ",  this.value); // 100
+                setTimeout(function() {
+                        console.log("callback's this window: ",  this===window);
+                        console.log("callback's this.value: ",  this.value); // 1
+                }, 100);
+    }
+};
+var foo = obj.foo;
+foo();
+
 			
 
 
